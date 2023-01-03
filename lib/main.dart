@@ -32,13 +32,13 @@ class MapSampleState extends State<MapSample> {
   final TextEditingController _searchController = TextEditingController();
 
   static const CameraPosition CamM = CameraPosition(
-    target: LatLng(37.42796133580664, -122.085749655962),
+    target: LatLng(31.920682,35.859416),
     zoom: 14.4746,
   );
   static const Marker _M =Marker(markerId: MarkerId('MARKER'), //marker
-  infoWindow: InfoWindow(title: 'Google'),
+  infoWindow: InfoWindow(title: 'marker'),
   icon: BitmapDescriptor.defaultMarker,
-  position: LatLng(37.427,-122.08835)
+  position: LatLng(31.920682,35.859416)
   );
 
   @override
