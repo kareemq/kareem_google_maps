@@ -35,11 +35,7 @@ class MapSampleState extends State<MapSample> {
     target: LatLng(31.920682,35.859416),
     zoom: 14.4746,
   );
-  static const Marker _M =Marker(markerId: MarkerId('MARKER'), //marker
-  infoWindow: InfoWindow(title: 'marker'),
-  icon: BitmapDescriptor.defaultMarker,
-  position: LatLng(31.920682,35.859416)
-  );
+
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +61,6 @@ class MapSampleState extends State<MapSample> {
           Expanded(
             child: GoogleMap(
               mapType: MapType.normal,
-              markers: {_M,},
               initialCameraPosition: CamM,
               onMapCreated: (GoogleMapController controller) {
                 _controller.complete(controller);
