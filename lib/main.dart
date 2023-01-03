@@ -31,7 +31,7 @@ class MapSampleState extends State<MapSample> {
   Completer<GoogleMapController>();
   final TextEditingController _searchController = TextEditingController();
 
-  static const CameraPosition _kGooglePlex = CameraPosition(
+  static const CameraPosition CamM = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
     zoom: 14.4746,
   );
@@ -66,7 +66,7 @@ class MapSampleState extends State<MapSample> {
             child: GoogleMap(
               mapType: MapType.normal,
               markers: {_M,},
-              initialCameraPosition: _kGooglePlex,
+              initialCameraPosition: CamM,
               onMapCreated: (GoogleMapController controller) {
                 _controller.complete(controller);
               },
